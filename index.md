@@ -6,3 +6,11 @@ My interests are in developing games which the players can enjoy!
 <ul>
 <li><a href="https://github.com/{{ site.github_username}}">GitHub</a></li>
 </ul>
+# My Blog
+<ul>
+{% for post in site.posts %}
+<li>
+<a href="{{post.url}}">{{post.title}}</a>
+</li>
+{% endfor %}
+</ul>
